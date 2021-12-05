@@ -1,0 +1,42 @@
+{
+  "aet": {
+    "name": "Aetinx",
+    "pfp": "https://avatars.githubusercontent.com/u/65425469?v=4",
+    "jobs": ["✨ Founder"],
+    "link": "https://aetinx.glitch.me"
+  },
+  "ejaz": {
+    "name": "Ejaz Ali",
+    "pfp": "https://avatars.githubusercontent.com/u/73548455",
+    "jobs": ["Back-end", "Motion Design"],
+    "link": null
+  },
+  "wiwi": {
+    "name": "WillyCrespo",
+    "pfp": "https://cdn.glitch.com/944d74e2-41ce-4e33-9770-11f759b2545e%2Fhappyfella.png?v=1628287895534",
+    "jobs": ["Front-end"],
+    "link": "https://texteditorr.glitch.me/"
+  },
+  "chewjorn": {
+    "name": "jornmann",
+    "pfp": "https://cdn2.scratch.mit.edu/get_image/user/60574297_6000x6000.png",
+    "jobs": ["Front-end"],
+    "link": "https://studiochew.ml/"
+  },
+  "rbv": {
+    "name": "retronbv",
+    "pfp": "https://avatars.githubusercontent.com/u/49005044",
+    "jobs": ["Back-end"],
+    "link": null
+  },
+  "lumins": {
+    "name": "Lumins",
+    "pfp": "https://cdn2.scratch.mit.edu/get_image/user/76095753_6000x6000.png",
+    "jobs": ["Back-end", "Front-end"]
+  },
+  "tav": {
+    "name": "Tavi",
+    "pfp": "https://cdn2.scratch.mit.edu/get_image/user/74493888_6000x6000.png",
+    "jobs": ["Marketing"]
+  }
+}
