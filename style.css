@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 
-/* Inter on Cloudflare */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css")
-
 /* Colours */
 @import url("/colours.css");
 
@@ -278,22 +275,28 @@ a .team-member {
 }
 
 .steps {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 650px));
+  grid-gap: 50px;
   align-items: center;
-  justify-content: flex-start;
-}
-
-.steps:nth-child(even) {
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .steps:not(:last-child) {
   margin-bottom: 50px;
 }
 
+.steps:nth-child(even) *:first-child {
+  grid-column: 2;
+}
+
+.steps:nth-child(even) *:last-child {
+  grid-column: 1;
+  grid-row: 1;
+}
+
 .steps img {
-  max-width: 400px;
+  width: 100%;
   margin-right: 50px;
 }
 
@@ -356,13 +359,16 @@ a .team-member {
   }
   
   .steps {
-    display: block;
+    grid-template-columns: 1fr;
   }
   
-  .steps img {
-    width: 100%;
-    margin: none;
-    margin-bottom: 25px;
+  .steps:nth-child(even) *:first-child {
+    grid-column: initial;
+  }
+
+  .steps:nth-child(even) *:last-child {
+    grid-column: initial;
+    grid-row: initial;
   }
 }
 
