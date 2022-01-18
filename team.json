@@ -9,11 +9,11 @@
     "name": "Ejaz Ali",
     "pfp": "https://avatars.githubusercontent.com/u/73548455",
     "jobs": ["Back-end", "Motion Design"],
-    "link": null
+    "link": "https://ejaz4.github.io/"
   },
   "wiwi": {
-    "name": "WillyCrespo",
-    "pfp": "https://cdn.glitch.com/944d74e2-41ce-4e33-9770-11f759b2545e%2Fhappyfella.png?v=1628287895534",
+    "name": "willy",
+    "pfp": "https://u.cubeupload.com/8ed/reddit.png",
     "jobs": ["Front-end"],
     "link": "https://texteditorr.glitch.me/"
   },
@@ -23,19 +23,8 @@
     "jobs": ["Front-end"],
     "link": "https://studiochew.ml/"
   },
-  "rbv": {
-    "name": "retronbv",
-    "pfp": "https://avatars.githubusercontent.com/u/49005044",
-    "jobs": ["Back-end"],
-    "link": null
-  },
-  "lumins": {
-    "name": "Lumins",
-    "pfp": "https://cdn2.scratch.mit.edu/get_image/user/76095753_6000x6000.png",
-    "jobs": ["Back-end", "Front-end"]
-  },
-  "tav": {
-    "name": "Tavi",
+  "riso": {
+    "name": "Risograph",
     "pfp": "https://cdn2.scratch.mit.edu/get_image/user/74493888_6000x6000.png",
     "jobs": ["Marketing"]
   }

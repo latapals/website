@@ -1,9 +1,10 @@
+const teamSection = document.getElementById("team-cards");
 fetch("/team.json")
-  .then((res) => {
-    return res.text();
+  .then(function(result) {
+    return result.text();
   })
-  .then((res) => {
-    let team = JSON.parse(res);
+  .then(function(result) {
+    const team = JSON.parse(result);
     for (let i in team) {
       let card = "";
       card += (team[i].link != undefined) ?
@@ -14,13 +15,19 @@ fetch("/team.json")
         `<div class="team-icon" style="background: url(${team[i].pfp})"></div>`
         : "";
       card += `<h2>${team[i].name}</h2>`;
-      let jobs = team[i].jobs.join(" • ")
+      let jobs = "";
+      for (let i2 in team[i].jobs) {
+        jobs += team[i].jobs[i2];
+        if (i2 != team[i].jobs.length - 1) {
+          jobs += " • ";
+        }
+      }
       card += `<p>${jobs}</p>`;
       card += `</div>`;
       card += (team[i].link != undefined) ?
         `</a>`
         : "";
-      document.getElementById("team-cards").innerHTML += card;
+      teamSection.innerHTML += card;
     }
   })
   .catch(function(err) {
