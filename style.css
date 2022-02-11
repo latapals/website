@@ -90,7 +90,7 @@ button:hover .arrow {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#2255ddbf, #2255ddbf), url('https://cdn.glitch.global/dc38f52f-de50-4241-b0b3-d10b915c70ac/DSC00486.JPG?v=1642365433473');
+  background: var(--blue);
   background-size: cover;
   background-attachment: fixed;
   padding: 100px;
