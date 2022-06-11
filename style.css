@@ -1,0 +1,70 @@
+@import url("/uwsl.css");
+
+.list {
+  display: grid;
+  grid-gap: 25px;
+}
+
+.list > * {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  gap: 25px;
+  padding: 50px;
+}
+
+.list .list-icon, .list .list-pfp {
+  background: #aaa;
+  background-size: cover;
+  border-radius: 16px;
+  height: 50px;
+  width: 50px;
+}
+
+.list .list-pfp {
+  background-origin: border-box;
+  border: 1px solid #00000033;
+  border-radius: 50%;
+}
+
+.list .list-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list .list-title {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.list .list-desc {
+  color: #555;
+  font-size: 1em;
+}
+
+.project-card {
+  border: none;
+  color: white;
+}
+
+.project-card .list-desc {
+  color: white;
+}
+
+.project-card a.button {
+  background: white;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-card, .list > * {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px;
+  }
+}

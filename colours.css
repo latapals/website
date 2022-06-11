@@ -1,0 +1,55 @@
+:root {
+  --red-light-light: #fdd;
+  --red-light: #faa;
+  --red: #f45;
+  --red-dark: #800;
+  --red-dark-dark: #300;
+
+  --orange-light-light: #fed;
+  --orange-light: #fda;
+  --orange: #f90;
+  --orange-dark: #930;
+  --orange-dark-dark: #500;
+
+  --yellow-light-light: #ffd;
+  --yellow-light: #ffa;
+  --yellow: #fc0;
+  --yellow-dark: #960;
+  --yellow-dark-dark: #520;
+
+  --green-light-light: #dfd;
+  --green-light: #afa;
+  --green: #0c6;
+  --green-dark: #050;
+  --green-dark-dark: #020;
+
+  --cyan-light-light: #bff;
+  --cyan-light: #8ef;
+  --cyan: #2bf;
+  --cyan-dark: #06a;
+  --cyan-dark-dark: #103;
+
+  --blue-light-light: #aef;
+  --blue-light: #6cf;
+  --blue: #17f;
+  --blue-dark: #117;
+  --blue-dark-dark: #113;
+
+  --purple-light-light: #fdf;
+  --purple-light: #daf;
+  --purple: #75f;
+  --purple-dark: #109;
+  --purple-dark-dark: #006;
+
+  --pink-light-light: #fef;
+  --pink-light: #fcf;
+  --pink: #f69;
+  --pink-dark: #a03;
+  --pink-dark-dark: #500;
+
+  --brown-light-light: #ffe;
+  --brown-light: #fd7;
+  --brown: #c82;
+  --brown-dark: #730;
+  --brown-dark-dark: #400;
+}
