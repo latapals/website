@@ -165,7 +165,7 @@ header h2 {
   line-height: 1.5;
 }
 
-section {
+main, section {
   padding: 0 100px 100px 100px;
   margin: 0 auto;
   max-width: 1300px;
