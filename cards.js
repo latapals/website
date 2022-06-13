@@ -36,7 +36,7 @@ let team = [
     name: "Aetinx",
     pfp: "https://avatars.githubusercontent.com/u/65425469?v=4",
     roles: ["Founder"],
-    url: "https://aetinx.saco.ml"
+    url: "https://aetinx.saco.dev"
   },
   {
     name: "Risograph",
