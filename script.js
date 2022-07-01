@@ -3,4 +3,4 @@ banner.innerHTML = `<banner style="--banner: linear-gradient(0deg, rgba(0, 0, 0,
   Happy pride month!
 </banner>`
 banner = banner.children[0]
-document.body.prepend(banner)
+//document.body.prepend(banner)
