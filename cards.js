@@ -51,9 +51,9 @@ let team = [
     url: "https://ejaz.is-a.dev"
   },
   {
-    name: "Lumin",
+    name: "Lumins",
     pfp: "https://github.com/luminslo.png",
-    roles: ["API", "Accounts"],
+    roles: ["API", "Authentication"],
     url: "https://github.com/luminslo"
   },
   {
