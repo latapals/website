@@ -34,25 +34,31 @@ let projects = [
 let team = [
   {
     name: "Aetinx",
-    pfp: "https://avatars.githubusercontent.com/u/65425469?v=4",
+    pfp: "https://github.com/aetinx.png",
     roles: ["Founder"],
     url: "https://aetinx.saco.dev"
   },
   {
     name: "Risograph",
-    pfp: "https://avatars.githubusercontent.com/u/80423931?v=4",
+    pfp: "https://github.com/risograph.png",
     roles: ["UX", "Marketing"],
     url: "https://risograph.github.io"
   },
   {
     name: "Ejaz Ali",
-    pfp: "https://avatars.githubusercontent.com/u/73548455?v=4",
+    pfp: "https://github.com/ejaz4.png",
     roles: ["Back-end"],
     url: "https://ejaz.is-a.dev"
   },
   {
+    name: "Lumin",
+    pfp: "https://github.com/luminslo.png",
+    roles: ["API"],
+    url: "https://github.com/luminslo"
+  },
+  {
     name: "Willy",
-    pfp: "https://avatars.githubusercontent.com/u/79392954?v=4",
+    pfp: "https://github.com/wulliy.png",
     roles: ["Front-end"],
     url: "https://github.com/wulliy"
   }
