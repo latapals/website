@@ -53,7 +53,7 @@ let team = [
   {
     name: "Lumin",
     pfp: "https://github.com/luminslo.png",
-    roles: ["API"],
+    roles: ["API", "Accounts"],
     url: "https://github.com/luminslo"
   },
   {
