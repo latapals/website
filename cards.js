@@ -3,7 +3,7 @@ let projects = [
     background: `linear-gradient(245.73deg, #FFA28D 0%, #EF47D4 100%)`,
     button: {
       text: "Start writing",
-      url: "https://github.com/sargent-coding/jumblejot"
+      url: "https://github.com/latapals/jumblejot"
     },
     desc: "Simply productive, productivly simple.",
     icon: "/icons/jj.png",
@@ -13,7 +13,7 @@ let projects = [
     background: `var(--blue)`,
     button: {
       text: "Browse our icons",
-      url: "https://github.com/sargent-coding/icons"
+      url: "https://github.com/latapals/icons"
     },
     desc: "Pretty icons designed by us.",
     icon: "/icons/icons.png",
@@ -23,7 +23,7 @@ let projects = [
     background: `linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, #FF4455 0%, #FFAA33 18.75%, #FFCC00 36.98%, #00CC66 49.48%, #22BBFF 68.23%, #1177FF 83.85%, #7755EE 100%)`,
     button: {
       text: "Learn more",
-      url: "https://github.com/sargent-coding/colours"
+      url: "https://github.com/latapals/colours"
     },
     desc: "A colourful library for colourful projects.",
     icon: "/icons/colours.png",
