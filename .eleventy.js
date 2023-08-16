@@ -1,39 +1,37 @@
 const { DateTime } = require("luxon");
-const pluginSEO = require("eleventy-plugin-seo");
-
-/**
-* This is the JavaScript code that determines the config for your Eleventy site
-*
-* You can add lost of customization here to define how the site builds your content
-* Try extending it to suit your needs!
-*/
+const fs = require("fs");
+const njk = require("nunjucks");
+const NOT_FOUND_PATH = "_site/404.njk";
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.setTemplateFormats([
-    // Templates:
-    "html",
-    "xml",
-    "njk",
-    "md",
-    // Static Assets:
-    "css",
-    "js",
-    "jpeg",
-    "jpg",
-    "png",
-    "svg",
-    "woff",
-    "woff2"
-  ]);
+  
+  // Define the template formats to be processed by Eleventy
+  eleventyConfig.setTemplateFormats(["njk", "md", "html"]);
+  
+  // Copy static assets from the "public" directory to the output directory
   eleventyConfig.addPassthroughCopy("public");
-
+  
   // Filters let you modify the content https://www.11ty.dev/docs/filters/
   eleventyConfig.addFilter("htmlDateString", dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
-  eleventyConfig.setBrowserSyncConfig({ ghostMode: false });
+  // Configure BrowserSync and add custom 404 middleware
+  eleventyConfig.setBrowserSyncConfig({
+    ghostMode: false,
+    callbacks: {
+      ready: function(err, bs) {
+        bs.addMiddleware("*", (req, res) => {
+          const rendered = fs.readFileSync("build/404/index.html");
+          res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
+          res.write(rendered);
+          res.end();
+        });
+      },
+    },
+  });
 
+  // Set the input directory, includes directory, and output directory
   return {
     dir: {
       input: "src",
