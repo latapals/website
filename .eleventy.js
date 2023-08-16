@@ -1,7 +1,6 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
 const njk = require("nunjucks");
-const NOT_FOUND_PATH = "_site/404.njk";
 
 module.exports = function(eleventyConfig) {
   
