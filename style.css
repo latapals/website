@@ -20,7 +20,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 100px;
-  background: linear-gradient(180deg, #08F 0%, #7AC1FF 100%), var(--Accent, #08F);
+  background: linear-gradient(180deg, #08F 0%, #7AC1FF 100%), #08f;
   max-width: 750px;
   padding: 0;
   margin: 0;
