@@ -52,6 +52,7 @@ p {
 
 #links {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -81,6 +82,7 @@ p {
   justify-content: center;
   height: 1em;
   width: 1em;
+  flex-shrink: 0;
 }
 
 .symbol svg {
@@ -91,4 +93,33 @@ p {
 
 .symbol svg path {
   fill: #111;
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    padding: 50px;
+  }
+
+  body {
+    gap: 25px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    text-wrap: balance;
+  }
+
+  p {
+    font-size: 16px;
+    text-wrap: balance;
+  }
+
+  #text {
+    gap: 25px;
+    max-width: 500px;
+  }
+
+  .button {
+    width: 100%;
+  }
 }
