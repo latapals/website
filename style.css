@@ -1,0 +1,94 @@
+:root {
+  font-family: InterVariable, Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+  font-variation-settings: "opsz" 32;  
+}
+
+html {
+  display: flex;
+  box-sizing: border-box;
+  padding: 100px;
+  min-height: 100dvh;
+  justify-content: center;
+  align-content: space-between;
+}
+
+body {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  background: linear-gradient(180deg, #08F 0%, #7AC1FF 100%), var(--Accent, #08F);
+  max-width: 750px;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#links {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 9999px;
+  box-shadow: 0px -2px 4px 0px rgba(0, 136, 255, 0.50) inset, 0px 0px 2px 0px #FFF inset, 0px 0px 2px 0px rgba(255, 255, 255, 0.50) inset, 0px 2px 2px 0px rgba(0, 34, 153, 0.25);
+  padding: 10px 20px;
+  height: 40px;
+  color: #111;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.button .symbol {
+  font-size: 18px;
+}
+
+.symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1em;
+  width: 1em;
+}
+
+.symbol svg {
+  scale: calc(4/3);
+  height: 100%;
+  width: 100%;
+}
+
+.symbol svg path {
+  fill: #111;
+}
