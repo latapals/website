@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+---
+
+<main class="document">
+  {% if title %}<h1 class="display">{{ title }}</h1>{% endif %}
+  {{ content | betterClasses | safe }}
+</main>

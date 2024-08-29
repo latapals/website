@@ -10,6 +10,24 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
+  // New custom filter to add "test" class to paragraphs
+  eleventyConfig.addFilter("betterClasses", content => {
+
+    let map = {
+      "p": "paragraph",
+      "h1": "heading-large",
+      "h2": "heading-medium",
+      "h3": "heading-small",
+      "h4": "paragrah-large"
+    }
+        
+    for (let [key, value] of Object.entries(map)) {
+      content = content.replace(new RegExp(`<${key}>`, "g"), `<${key} class="${value}">`)
+    }
+    
+    return content
+  })
+
   eleventyConfig.setBrowserSyncConfig({ ghostMode: false });
 
   return {

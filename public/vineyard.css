@@ -1,26 +1,33 @@
 @import url("https://kitt.aetinx.repl.co/kitt.css");
 
-@import url("https://cdn.jsdelivr.net/gh/shannonmoeller/reset-css@master/reset.css");
-
 :root {
   --banner: #07f;
   --on-banner: white;
 }
 
-body {
+html {
   box-sizing: border-box;
+  display: grid;
+  place-content: strectch;
+  padding: 50px;
+  min-height: 100vh;
+  display: grid;
+}
+
+body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  min-height: 100vh;
-  margin: 0;
+  padding: 0;
+  margin: 0 auto;
   color: var(--on-background);
-  font-family: "InterDisplay var", "Inter var", Inter;
   font-size: 16px;
   font-weight: 500;
   font-variation-settings: "opsz" 32;
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 1080px;
 }
 
 banner {
@@ -47,11 +54,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 50px 0 50px;
-  color: var(--on-background-sub);
-  font-size: 15px;
-  font-weight: 500;
-  max-width: 1300px;
+  color: var(--foreground-medium);
 }
 
 nav a {
@@ -80,8 +83,8 @@ nav > *:first-child {
 }
 
 nav > *:first-child svg {
-  height: 28px;
-  width: 28px;
+  height: 32px;
+  width: 32px;
   fill: var(--blue);
 }
 
@@ -112,8 +115,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 100px;
-  max-width: 1400px;
+  margin: 100px auto 50px auto;
 }
 
 footer > div {
@@ -128,14 +130,17 @@ footer a {
   text-decoration: none;
 }
 
-main {
+footer svg {
+  height: 1.5em;
+  width: auto;
+}
+
+main:not(.document) {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 1;
-  max-width: 1400px;
-  padding: 0 100px;
   margin: 0 auto;
   text-align: center;
 }
@@ -145,33 +150,96 @@ main > .content {
   gap: 200px;
 }
 
-.text-hero {
-  font-size: 96px;
-  font-weight: 600;
-  letter-spacing: -4;
-  line-height: 1;
-  max-width: 1000px;
-  margin: 150px auto 200px auto;
+section {
+  width: 100%;
 }
 
-.section--header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 25px;
-  text-align: center;
-  margin: 0 auto 75px auto;
+.hero {
+  padding: 150px 0;
+}
+
+.hero h1 {
+  margin: 0;
+}
+
+.hero.hero-display {
+  padding-bottom: 200px;
+}
+
+.surface {
+  --background: var(--surface);
+  --foreground: var(--on-surface);
+  --s: var(--on-surface);
+  --os: var(--surface);
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.surface > * {
+  --surface: var(--s);
+  --on-surface: var(--os);
+}
+
+.document {
+  margin: 100px auto 50px auto;
   max-width: 750px;
 }
 
-.section--header h2 {
-  font-size: 48px;
-  font-weight: 600;
+.document .display {
+  margin-bottom: 100px;
 }
 
-.section--header p {
-  font-size: 20px;
-  line-height: 1.5;
-  color: #777;
+.document .heading-large,
+.document .heading-medium,
+.document .heading-small,
+.document h4.paragraph-large {
+  margin: 50px 0 25px 0;
+}
+
+.document p {
+  margin: 1em 0;
+}
+
+.center {
+  display: grid;
+  place-content: center;
+}
+
+.projects {
+  display: grid;
+  gap: 25px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 32px;
+  padding: 150px 75px;
+  overflow: hidden;
+}
+
+.project-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 34px;
+  line-height: 0;
+  margin-bottom: 40px;
+  opacity: 0.75;
+}
+
+.project-title {
+  margin-bottom: 50px;
+}
+
+.project-extra {
+  margin-top: 125px;
+}
+
+@media only screen and (max-width: 780px) {
+  .project-extra {
+    display: none;
+  }
 }
