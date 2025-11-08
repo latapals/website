@@ -1,125 +1,66 @@
-:root {
-  font-family: InterVariable, Inter, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1;
-  font-variation-settings: "opsz" 32;  
-}
-
-html {
-  display: flex;
+* {
   box-sizing: border-box;
-  padding: 100px;
-  min-height: 100dvh;
-  justify-content: center;
-  align-content: space-between;
-}
-
-body {
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 100px;
-  background: linear-gradient(180deg, #08F 0%, #7AC1FF 100%), #08f;
-  max-width: 750px;
   padding: 0;
   margin: 0;
-  color: white;
 }
 
-#text {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-bottom: 25px;
-  text-align: center;
+body,
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
-h1 {
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  margin: 0;
-}
-
-p {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.5;
-  margin: 0;
-}
-
-#links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-  box-sizing: border-box;
-  background: white;
-  border-radius: 9999px;
-  box-shadow: 0px -2px 4px 0px rgba(0, 136, 255, 0.50) inset, 0px 0px 2px 0px #FFF inset, 0px 0px 2px 0px rgba(255, 255, 255, 0.50) inset, 0px 2px 2px 0px rgba(0, 34, 153, 0.25);
-  padding: 10px 20px;
-  height: 40px;
-  color: #111;
-  font-weight: 500;
+a {
+  color: inherit;
   text-decoration: none;
 }
 
-.button .symbol {
-  font-size: 18px;
+main {
+  box-sizing: content-box;
+  padding: 64px;
+  margin: 0 auto 0 0;
+  max-width: 512px;
+  color: #111111;
+  font-family: serif;
+  font-size: 16px;
+  line-height: 1.15em;
 }
 
-.symbol {
+section {
+  margin-bottom: 1.5em;
+}
+
+section p {
+  margin-bottom: 0.5em;
+}
+
+section ul {
+  list-style-type: none;
+  margin-bottom: 0.5em;
+}
+
+section ul li {
+  margin-bottom: 0.25em;
+}
+
+section ul li:before {
+  content: "•";
   display: inline-flex;
-  align-items: center;
+  width: 19px;
+  height: 16px;
   justify-content: center;
-  height: 1em;
-  width: 1em;
-  flex-shrink: 0;
+  align-items: center;
 }
 
-.symbol svg {
-  scale: calc(4/3);
-  height: 100%;
-  width: 100%;
+a[href] {
+  color: #00e;
+  text-decoration: underline;
+  transition: all 0.12s ease;
 }
 
-.symbol svg path {
-  fill: #111;
-}
-
-@media only screen and (max-width: 900px) {
-  html {
-    padding: 50px;
-  }
-
-  body {
-    gap: 25px;
-  }
-  
-  h1 {
-    font-size: 32px;
-    text-wrap: balance;
-  }
-
-  p {
-    font-size: 16px;
-    text-wrap: balance;
-  }
-
-  #text {
-    gap: 25px;
-    max-width: 500px;
-  }
-
-  .button {
-    width: 100%;
+@media (max-width: 512px) {
+  main {
+    padding: 32px;
+    max-width: unset;
   }
 }
